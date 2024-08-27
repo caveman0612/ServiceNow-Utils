@@ -26,7 +26,7 @@
     "content_scripts": [
       {
         "matches": [
-          "https://*.service-now.com/*"
+          "https://*.servicenowservices.com/*"
         ],
         "exclude_matches": [
           "*://*/*?XML*",
@@ -43,7 +43,7 @@
       },
       {
         "matches": [
-          "https://*.service-now.com/*"
+          "https://*.servicenowservices.com/*"
         ],
         "exclude_matches": [
           "*://*/*?XML*",
@@ -102,13 +102,13 @@
           "js/*"
         ],
         "matches": [
-          "https://*.service-now.com/*"
+          "https://*.servicenowservices.com/*"
         ]
       }
     ],
     "incognito": "split",
     "content_security_policy": {
-      "extension_pages": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src https://*.service-now.com 'self' data:; child-src 'none'; object-src 'none'; frame-src https://*.service-now.com; connect-src https://*.service-now.com ws://127.0.0.1:1978/"
+      "extension_pages": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src https://*.servicenowservices.com 'self' data:; child-src 'none'; object-src 'none'; frame-src https://*.servicenowservices.com; connect-src https://*.servicenowservices.com ws://127.0.0.1:1978/"
     },
     "action": {
       "default_title": "SN Utils",
@@ -120,10 +120,10 @@
         "128": "images/icon128.png"
       },
       "show_matches": [
-        "https://*.service-now.com/*"
+        "https://*.servicenowservices.com/*"
       ]
     },
   "host_permissions": [
-      "https://*.service-now.com/*"
+      "https://*.servicenowservices.com/*"
     ]
   }
